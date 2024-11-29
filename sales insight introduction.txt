@@ -1,0 +1,32 @@
+Data Analyst Project
+Problem Statement:
+scenerio where computer hardware manufacturing company is facing is facing issues in terms of sales
+and  how they hire data analyst and how they use aims grid to define a problem and how they define 
+a path of strategies to tackle that problem and how they work on 1. data discovery 2.data cleaning
+and data merging 4.Generating dashboards in powerbi
+
+Once this dashboard is built, we will get as an end product is a powerful dashboard where youll be 
+able to track:
+-Revenue numbers -Sales quantity numbers -Revenue break down by regions and different products
+-Revenue Trends and this is usually given to stakeholders(sales director/marketing head) to give feedback on the dashboard
+
+Problem Statement:
+AtliQ hardware is a company that supplies computer hardware and peripherals to clients
+-Surge stores, Nomad Stores, Excel Stores, Electricalasara Stores
+fond in deli india
+
+The challenge is this: The market is growning dynamially and the director is facing issues in terms of
+tracking the sales  in this dynamically geowing market, and his having issues with the insights of his business
+
+The director has regional marnegers of these 3 regions: North, South and Central India, to get insights in these regions
+he would call these people and on the phone these regional managers would give him the insight: This was the sales
+in this quarter, and we are going to grow by this much in the next quarter
+-The problem is, the conversation that is happening is verbal. The regional managers usually provide excel files
+instead of a clear picture
+
+-If theres a region where sales are decling, maybe we can offer promotions, engage in customers in a better way
+-A dashboard would be better than just reading a thousand excel sheets
+-With these dashboards the director can:1.Identify trends of numbers 2. set monthly email reminders where at the end of the month
+where powerbi send him an email telling him that this is how the business looks in terms of revenue and customers and so on
+
+-as a sales director, he can make data based decisions which will help in increasing company sales
