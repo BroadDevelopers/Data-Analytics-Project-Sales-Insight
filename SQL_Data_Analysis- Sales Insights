@@ -1,0 +1,31 @@
+/*This is data analysis
+we are already generating data using SQl
+*/
+/* Seeing a number of records in total*/
+SELECT count(*) FROM sales.transactions;
+/*5 first recods*/
+SELECT * FROM sales.transactions limit 5;
+/*showing transactions that only belong to chennai*/
+SELECT * FROM sales.transactions where market_code="Mark001";
+/*showing how many transactions wer performed in chennai*/
+SELECT count(*) FROM sales.transactions where market_code="Mark001";
+/*How many transactions have USD currency
+when bulding our PowebBi dashboard we will convert
+this usd to inr
+*/
+SELECT * FROM sales.transactions where currency="USD";
+/*Transaction in 2020 joined by date table
+using inner join
+.* means print all the colums  */
+SELECT sales.transactions.*, sales.date.* FROM sales.transactions INNER JOIN sales.date ON sales.transactions.order_date=sales.date.date;
+/*transactions in 2020*/
+SELECT sales.transactions.*, sales.date.* FROM sales.transactions INNER JOIN sales.date ON sales.transactions.order_date=sales.date.date where sales.date.year="2020";
+/*total revenue/sales in 2020*/
+SELECT SUM( sales.transactions.sales_amount) FROM sales.transactions INNER JOIN sales.date ON sales.transactions.order_date=sales.date.date where sales.date.year="2020";
+/*Sum in chinnea
+how much business was done in chinnea
+*/
+SELECT SUM( sales.transactions.sales_amount) FROM sales.transactions INNER JOIN sales.date ON sales.transactions.order_date=sales.date.date 
+where sales.date.year="2020" and sales.transactions.market_code="Mark001";
+/*wanting to know the distinct products sold in chennai*/
+SELECT distinct product_code FROM sales.transactions where market_code='Mark001';
